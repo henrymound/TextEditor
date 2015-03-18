@@ -11,10 +11,18 @@
 @interface ViewController : UIViewController{
 
     IBOutlet UITextView *TextView;
+    IBOutlet UIButton *NewNote;
+    
 
 }
 
 @property (strong, nonatomic) IBOutlet UITextView *TextView;
+@property (strong, nonatomic) IBOutlet UIButton *NewNote;
+
+@property (strong, nonatomic) UIColor *BACKGROUND_COLOR;
+@property (strong, nonatomic) UIColor *TEXT_COLOR;
+
+
 
 @end
 

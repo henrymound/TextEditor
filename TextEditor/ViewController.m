@@ -21,32 +21,48 @@
 @end
 
 @implementation ViewController
-@synthesize TextView = _TextView;
+@synthesize TextView = _TextView, NewNote = _NewNote, BACKGROUND_COLOR = backgroundColor, TEXT_COLOR = textColor;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIColor *BACKGROUND_COLOR = [UIColor whiteColor];
-    UIColor *TEXT_COLOR = [UIColor colorWithRed:0
-                                          green:0
-                                           blue:.5
-                                          alpha:1];
     
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+    _NewNote =[UIButton buttonWithType:UIButtonTypeSystem];
+    [_NewNote setTitle:@"+" forState:UIControlStateNormal];
+    [_NewNote sizeToFit];
+    _NewNote.titleLabel.font = [UIFont systemFontOfSize:30];
+    _NewNote.center = CGPointMake(20, 20);
+    [_NewNote addTarget:self action:@selector(NewNoteButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:_NewNote];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)NewNoteButton:(UIButton *)sender{
+    
+    [_NewNote removeFromSuperview];
+    
+    backgroundColor = [UIColor colorWithRed:.2
+                                       green:.2
+                                        blue:.2
+                                       alpha:1];
+    textColor = [UIColor colorWithRed:1
+                                          green:1
+                                           blue:1
+                                          alpha:1];
+
+    
     _TextView = [[UITextView alloc] initWithFrame:CGRectMake(0,
                                                              [UIApplication sharedApplication].statusBarFrame.size.height,
                                                              [[UIScreen mainScreen] bounds].size.width,
                                                              [[UIScreen mainScreen] bounds].size.height)];
-    [self.view setBackgroundColor:BACKGROUND_COLOR];
-    [_TextView setBackgroundColor:BACKGROUND_COLOR];
-    [_TextView setTextColor:TEXT_COLOR];
+    [self.view setBackgroundColor:backgroundColor];
+    [_TextView setBackgroundColor:backgroundColor];
+    [_TextView setTextColor:textColor];
     _TextView.font = [UIFont fontWithName:@"Jaapokki-Regular" size:20];
     [self.view addSubview:_TextView];
-    
 
-    
-
-
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
