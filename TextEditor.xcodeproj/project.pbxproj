@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80774E351AB8F99B00636E4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E341AB8F99B00636E4B /* main.m */; };
+		80774E381AB8F99B00636E4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E371AB8F99B00636E4B /* AppDelegate.m */; };
+		80774E3B1AB8F99B00636E4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E3A1AB8F99B00636E4B /* ViewController.m */; };
+		80774E3E1AB8F99B00636E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80774E3C1AB8F99B00636E4B /* Main.storyboard */; };
+		80774E401AB8F99B00636E4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80774E3F1AB8F99B00636E4B /* Images.xcassets */; };
+		80774E431AB8F99B00636E4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80774E411AB8F99B00636E4B /* LaunchScreen.xib */; };
+		80774E4F1AB8F99B00636E4B /* TextEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E4E1AB8F99B00636E4B /* TextEditorTests.m */; };
+		80774E5C1AB8FE5F00636E4B /* Jaapokki-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80774E5A1AB8FE5F00636E4B /* Jaapokki-Regular.otf */; };
+		80774E5D1AB8FE5F00636E4B /* MANIFESTO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80774E5B1AB8FE5F00636E4B /* MANIFESTO.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80774E491AB8F99B00636E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80774E271AB8F99B00636E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80774E2E1AB8F99B00636E4B;
+			remoteInfo = TextEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80774E2F1AB8F99B00636E4B /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80774E331AB8F99B00636E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80774E341AB8F99B00636E4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80774E361AB8F99B00636E4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80774E371AB8F99B00636E4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80774E391AB8F99B00636E4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		80774E3A1AB8F99B00636E4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80774E3D1AB8F99B00636E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80774E3F1AB8F99B00636E4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80774E421AB8F99B00636E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		80774E481AB8F99B00636E4B /* TextEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80774E4D1AB8F99B00636E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80774E4E1AB8F99B00636E4B /* TextEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextEditorTests.m; sourceTree = "<group>"; };
+		80774E5A1AB8FE5F00636E4B /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jaapokki-Regular.otf"; sourceTree = "<group>"; };
+		80774E5B1AB8FE5F00636E4B /* MANIFESTO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MANIFESTO.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80774E2C1AB8F99B00636E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80774E451AB8F99B00636E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80774E261AB8F99B00636E4B = {
+			isa = PBXGroup;
+			children = (
+				80774E311AB8F99B00636E4B /* TextEditor */,
+				80774E4B1AB8F99B00636E4B /* TextEditorTests */,
+				80774E301AB8F99B00636E4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80774E301AB8F99B00636E4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80774E2F1AB8F99B00636E4B /* TextEditor.app */,
+				80774E481AB8F99B00636E4B /* TextEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80774E311AB8F99B00636E4B /* TextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80774E581AB8FE5F00636E4B /* Resources */,
+				80774E361AB8F99B00636E4B /* AppDelegate.h */,
+				80774E371AB8F99B00636E4B /* AppDelegate.m */,
+				80774E391AB8F99B00636E4B /* ViewController.h */,
+				80774E3A1AB8F99B00636E4B /* ViewController.m */,
+				80774E3C1AB8F99B00636E4B /* Main.storyboard */,
+				80774E3F1AB8F99B00636E4B /* Images.xcassets */,
+				80774E411AB8F99B00636E4B /* LaunchScreen.xib */,
+				80774E321AB8F99B00636E4B /* Supporting Files */,
+			);
+			path = TextEditor;
+			sourceTree = "<group>";
+		};
+		80774E321AB8F99B00636E4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80774E331AB8F99B00636E4B /* Info.plist */,
+				80774E341AB8F99B00636E4B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80774E4B1AB8F99B00636E4B /* TextEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				80774E4E1AB8F99B00636E4B /* TextEditorTests.m */,
+				80774E4C1AB8F99B00636E4B /* Supporting Files */,
+			);
+			path = TextEditorTests;
+			sourceTree = "<group>";
+		};
+		80774E4C1AB8F99B00636E4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80774E4D1AB8F99B00636E4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80774E581AB8FE5F00636E4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80774E591AB8FE5F00636E4B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80774E591AB8FE5F00636E4B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				80774E5A1AB8FE5F00636E4B /* Jaapokki-Regular.otf */,
+				80774E5B1AB8FE5F00636E4B /* MANIFESTO.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80774E2E1AB8F99B00636E4B /* TextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80774E521AB8F99B00636E4B /* Build configuration list for PBXNativeTarget "TextEditor" */;
+			buildPhases = (
+				80774E2B1AB8F99B00636E4B /* Sources */,
+				80774E2C1AB8F99B00636E4B /* Frameworks */,
+				80774E2D1AB8F99B00636E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEditor;
+			productName = TextEditor;
+			productReference = 80774E2F1AB8F99B00636E4B /* TextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80774E471AB8F99B00636E4B /* TextEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80774E551AB8F99B00636E4B /* Build configuration list for PBXNativeTarget "TextEditorTests" */;
+			buildPhases = (
+				80774E441AB8F99B00636E4B /* Sources */,
+				80774E451AB8F99B00636E4B /* Frameworks */,
+				80774E461AB8F99B00636E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80774E4A1AB8F99B00636E4B /* PBXTargetDependency */,
+			);
+			name = TextEditorTests;
+			productName = TextEditorTests;
+			productReference = 80774E481AB8F99B00636E4B /* TextEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80774E271AB8F99B00636E4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Henry Mound";
+				TargetAttributes = {
+					80774E2E1AB8F99B00636E4B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					80774E471AB8F99B00636E4B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 80774E2E1AB8F99B00636E4B;
+					};
+				};
+			};
+			buildConfigurationList = 80774E2A1AB8F99B00636E4B /* Build configuration list for PBXProject "TextEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80774E261AB8F99B00636E4B;
+			productRefGroup = 80774E301AB8F99B00636E4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80774E2E1AB8F99B00636E4B /* TextEditor */,
+				80774E471AB8F99B00636E4B /* TextEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80774E2D1AB8F99B00636E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80774E5D1AB8FE5F00636E4B /* MANIFESTO.ttf in Resources */,
+				80774E5C1AB8FE5F00636E4B /* Jaapokki-Regular.otf in Resources */,
+				80774E3E1AB8F99B00636E4B /* Main.storyboard in Resources */,
+				80774E431AB8F99B00636E4B /* LaunchScreen.xib in Resources */,
+				80774E401AB8F99B00636E4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80774E461AB8F99B00636E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80774E2B1AB8F99B00636E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80774E3B1AB8F99B00636E4B /* ViewController.m in Sources */,
+				80774E381AB8F99B00636E4B /* AppDelegate.m in Sources */,
+				80774E351AB8F99B00636E4B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80774E441AB8F99B00636E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80774E4F1AB8F99B00636E4B /* TextEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80774E4A1AB8F99B00636E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80774E2E1AB8F99B00636E4B /* TextEditor */;
+			targetProxy = 80774E491AB8F99B00636E4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80774E3C1AB8F99B00636E4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80774E3D1AB8F99B00636E4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80774E411AB8F99B00636E4B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80774E421AB8F99B00636E4B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80774E501AB8F99B00636E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80774E511AB8F99B00636E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80774E531AB8F99B00636E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80774E541AB8F99B00636E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80774E561AB8F99B00636E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextEditor.app/TextEditor";
+			};
+			name = Debug;
+		};
+		80774E571AB8F99B00636E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextEditor.app/TextEditor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80774E2A1AB8F99B00636E4B /* Build configuration list for PBXProject "TextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80774E501AB8F99B00636E4B /* Debug */,
+				80774E511AB8F99B00636E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80774E521AB8F99B00636E4B /* Build configuration list for PBXNativeTarget "TextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80774E531AB8F99B00636E4B /* Debug */,
+				80774E541AB8F99B00636E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80774E551AB8F99B00636E4B /* Build configuration list for PBXNativeTarget "TextEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80774E561AB8F99B00636E4B /* Debug */,
+				80774E571AB8F99B00636E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80774E271AB8F99B00636E4B /* Project object */;
+}
