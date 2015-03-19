@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8009AF8F1ABB321900D38740 /* cerulean.css in Resources */ = {isa = PBXBuildFile; fileRef = 8009AF8A1ABB321900D38740 /* cerulean.css */; };
+		8009AF901ABB321900D38740 /* paper.css in Resources */ = {isa = PBXBuildFile; fileRef = 8009AF8B1ABB321900D38740 /* paper.css */; };
+		8009AF911ABB321900D38740 /* superhero.css in Resources */ = {isa = PBXBuildFile; fileRef = 8009AF8C1ABB321900D38740 /* superhero.css */; };
+		8009AF921ABB321900D38740 /* readable.css in Resources */ = {isa = PBXBuildFile; fileRef = 8009AF8D1ABB321900D38740 /* readable.css */; };
+		8009AF931ABB321900D38740 /* darkly.css in Resources */ = {isa = PBXBuildFile; fileRef = 8009AF8E1ABB321900D38740 /* darkly.css */; };
 		804A7CB61ABAFD01001ADA9B /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 804A7CB41ABAFD01001ADA9B /* content.html */; };
 		804A7CBC1ABAFE6B001ADA9B /* cyborg.css in Resources */ = {isa = PBXBuildFile; fileRef = 804A7CBB1ABAFE6B001ADA9B /* cyborg.css */; };
 		80774E351AB8F99B00636E4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E341AB8F99B00636E4B /* main.m */; };
@@ -31,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8009AF8A1ABB321900D38740 /* cerulean.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cerulean.css; sourceTree = "<group>"; };
+		8009AF8B1ABB321900D38740 /* paper.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = paper.css; sourceTree = "<group>"; };
+		8009AF8C1ABB321900D38740 /* superhero.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = superhero.css; sourceTree = "<group>"; };
+		8009AF8D1ABB321900D38740 /* readable.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = readable.css; sourceTree = "<group>"; };
+		8009AF8E1ABB321900D38740 /* darkly.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darkly.css; sourceTree = "<group>"; };
 		804A7CB41ABAFD01001ADA9B /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
 		804A7CBB1ABAFE6B001ADA9B /* cyborg.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cyborg.css; sourceTree = "<group>"; };
 		80774E2F1AB8F99B00636E4B /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +82,11 @@
 		804A7CBA1ABAFE6B001ADA9B /* themes */ = {
 			isa = PBXGroup;
 			children = (
+				8009AF8A1ABB321900D38740 /* cerulean.css */,
+				8009AF8B1ABB321900D38740 /* paper.css */,
+				8009AF8C1ABB321900D38740 /* superhero.css */,
+				8009AF8D1ABB321900D38740 /* readable.css */,
+				8009AF8E1ABB321900D38740 /* darkly.css */,
 				804A7CBB1ABAFE6B001ADA9B /* cyborg.css */,
 			);
 			path = themes;
@@ -238,9 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				804A7CBC1ABAFE6B001ADA9B /* cyborg.css in Resources */,
+				8009AF911ABB321900D38740 /* superhero.css in Resources */,
 				80774E5D1AB8FE5F00636E4B /* MANIFESTO.ttf in Resources */,
+				8009AF8F1ABB321900D38740 /* cerulean.css in Resources */,
+				8009AF931ABB321900D38740 /* darkly.css in Resources */,
 				80774E5C1AB8FE5F00636E4B /* Jaapokki-Regular.otf in Resources */,
 				804A7CB61ABAFD01001ADA9B /* content.html in Resources */,
+				8009AF901ABB321900D38740 /* paper.css in Resources */,
+				8009AF921ABB321900D38740 /* readable.css in Resources */,
 				80774E3E1AB8F99B00636E4B /* Main.storyboard in Resources */,
 				80774E431AB8F99B00636E4B /* LaunchScreen.xib in Resources */,
 				80774E401AB8F99B00636E4B /* Images.xcassets in Resources */,

@@ -105,7 +105,7 @@
 //    [_MDView stringByEvaluatingJavaScriptFromString:@"document.getElementById('header').click()"];
 //    NSLog(@"Selector: \"%@\"", html);
     
-    [_MDView stringByEvaluatingJavaScriptFromString:@"$('#text').focus();selectElementContents('header');"];
+    [_MDView stringByEvaluatingJavaScriptFromString:@"$('#text').focus();"];
 
 }
 
