@@ -77,6 +77,7 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource: @"content" ofType: @"html"];
     NSData *fileData = [NSData dataWithContentsOfFile: path];
+    [_MDView setKeyboardDisplayRequiresUserAction:NO];
     [_MDView loadData: fileData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL: [NSURL fileURLWithPath: path]];
 //    [_MDView loadHTMLString:@"<html><head><script type='text/javascript'>function sample() {alert('Paznja');}</script></head><body><h1>TEST</h1></body></html>" baseURL:nil];
     
@@ -85,12 +86,11 @@
     [_TextView setTextColor:textColor];
     _TextView.font = [UIFont fontWithName:@"Verdana" size:20];
     
-    
+    _MDView.delegate = self;
     
     [self.view addSubview:_TextView];
     [self.view addSubview:_MDView];
     
-    _MDView.delegate = self;
 
     
 
@@ -104,6 +104,8 @@
 //    
 //    [_MDView stringByEvaluatingJavaScriptFromString:@"document.getElementById('header').click()"];
 //    NSLog(@"Selector: \"%@\"", html);
+    
+    [_MDView stringByEvaluatingJavaScriptFromString:@"$('#text').focus();selectElementContents('header');"];
 
 }
 
