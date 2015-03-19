@@ -21,7 +21,7 @@
 @end
 
 @implementation ViewController
-@synthesize TextView = _TextView, NewNote = _NewNote, BACKGROUND_COLOR = backgroundColor, TEXT_COLOR = textColor, TitleBar = _TitleBar, TextOptionsView = _TextOptionsView, Header1 = _Header1;
+@synthesize TextView = _TextView, NewNote = _NewNote, BACKGROUND_COLOR = backgroundColor, TEXT_COLOR = textColor, TitleBar = _TitleBar, TextOptionsView = _TextOptionsView, Header1 = _Header1, MDView = _MDView;
 
 
 - (void)viewDidLoad {
@@ -41,11 +41,11 @@
     
     _Header1 = [UIButton buttonWithType:UIButtonTypeSystem];
     [_Header1 setTitle:@"H1" forState:UIControlStateNormal];
+    [_Header1 addTarget:self action:@selector(Header1Button:) forControlEvents:UIControlEventTouchUpInside];
     [_Header1 sizeToFit];
     
     _TextOptionsView = [[UIView alloc] initWithFrame:CGRectMake(0, _TitleBar.frame.size.height, [[UIScreen mainScreen] bounds].size.width, 30)];
     [_TextOptionsView setBackgroundColor:[UIColor lightGrayColor]];
-    
     
     [self.view addSubview:_TitleBar];
     [self.view addSubview:_NewNote];
@@ -68,15 +68,36 @@
                                           alpha:1];
 
     
-    _TextView = [[UITextView alloc] initWithFrame:CGRectMake(0,
-                                                             [UIApplication sharedApplication].statusBarFrame.size.height+ _TitleBar.frame.size.height + _TextOptionsView.frame.size.height,
-                                                             [[UIScreen mainScreen] bounds].size.width,
-                                                             [[UIScreen mainScreen] bounds].size.height)];
+
+    _MDView = [[UIWebView alloc] initWithFrame:CGRectMake(0,
+                                                          //[UIApplication sharedApplication].statusBarFrame.size.height+
+                                                          _TitleBar.frame.size.height + _TextOptionsView.frame.size.height,
+                                                          [[UIScreen mainScreen] bounds].size.width,
+                                                          [[UIScreen mainScreen] bounds].size.height)];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource: @"content" ofType: @"html"];
+    NSData *fileData = [NSData dataWithContentsOfFile: path];
+    [_MDView loadData: fileData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL: [NSURL fileURLWithPath: path]];
+    
+
+    
     [self.view setBackgroundColor:backgroundColor];
     [_TextView setBackgroundColor:backgroundColor];
     [_TextView setTextColor:textColor];
-    _TextView.font = [UIFont fontWithName:@"Jaapokki-Regular" size:20];
+    _TextView.font = [UIFont fontWithName:@"Verdana" size:20];
     [self.view addSubview:_TextView];
+    [self.view addSubview:_MDView];
+
+}
+
+- (void)Header1Button:(UIButton *)sender{
+
+    NSString *contentsToAdd = @"some string";
+    NSRange cursorPosition = [_TextView selectedRange];
+    NSMutableString *tfContent = [[NSMutableString alloc] initWithString:[_TextView text]];
+    [tfContent insertString:contentsToAdd atIndex:cursorPosition.location];
+    NSLog(@"%lu", (unsigned long)cursorPosition.location);
+    [_TextView setText:tfContent];
 
 }
 

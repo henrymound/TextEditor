@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *TextView;
 @property (strong, nonatomic) IBOutlet UIButton *NewNote;
 @property (strong, nonatomic) IBOutlet UINavigationBar *TitleBar;
+@property (strong, nonatomic) IBOutlet UIWebView *MDView;
 
 @property (strong, nonatomic) UIColor *BACKGROUND_COLOR;
 @property (strong, nonatomic) UIColor *TEXT_COLOR;
