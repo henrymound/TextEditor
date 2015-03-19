@@ -78,15 +78,29 @@
     NSString *path = [[NSBundle mainBundle] pathForResource: @"content" ofType: @"html"];
     NSData *fileData = [NSData dataWithContentsOfFile: path];
     [_MDView loadData: fileData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL: [NSURL fileURLWithPath: path]];
-    
-
+//    [_MDView loadHTMLString:@"<html><head><script type='text/javascript'>function sample() {alert('Paznja');}</script></head><body><h1>TEST</h1></body></html>" baseURL:nil];
     
     [self.view setBackgroundColor:backgroundColor];
     [_TextView setBackgroundColor:backgroundColor];
     [_TextView setTextColor:textColor];
     _TextView.font = [UIFont fontWithName:@"Verdana" size:20];
+    
+    
+    
     [self.view addSubview:_TextView];
     [self.view addSubview:_MDView];
+    
+    _MDView.delegate = self;
+
+    
+
+}
+
+- (void) webViewDidFinishLoad:(UIWebView *)webView
+{
+    //Execute javascript method or pure javascript if needed
+    NSString *html = [_MDView stringByEvaluatingJavaScriptFromString:@"getContentsOfText()"];
+    NSLog(@"Content: \"%@\"", html);
 
 }
 

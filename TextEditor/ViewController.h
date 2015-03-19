@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController <UIWebViewDelegate>{
 
     IBOutlet UITextView *TextView;
     IBOutlet UIButton *NewNote;
