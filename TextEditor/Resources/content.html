@@ -3,18 +3,11 @@
  <head>
      <link rel="stylesheet" type="text/css" href="cyborg.css">
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-         <script>
-             $(document).ready(function(){});
-         </script>
 
     <script>
         //Functions that can be accessed in app
         $(document).ready(
             function(){
-                function getContentsOfText(){
-                    $("#text").append('hey there');
-                    return $("#text").html();
-                }
             }
         );
                       
@@ -22,12 +15,13 @@
             return $("#text").html();
         }
     
-        function selectElementContents(el) {
+        function selectElementContents(el){
             var range = document.createRange();
-            range.selectNodeContents(el);
-            var sel = window.getSelection();
-            sel.removeAllRanges();
-            sel.addRange(range);
+            var selection = window.getSelection();
+            range.selectNodeContents(document.getElementById(el));
+            
+            selection.removeAllRanges();
+            selection.addRange(range);
         }
 
     </script>
@@ -41,10 +35,10 @@
     </style>
     
     <body>
-        <div id="text" contenteditable="true">
+        <div id="text" contenteditable="true" tabindex="0">
     
-            <h1 id="header">Set Title</h1>
-            <p id="mainBlock">Start Typing!</p>
+            <h1 id="header"></h1>
+            <p id="mainBlock"></p>
         
         </div>
     

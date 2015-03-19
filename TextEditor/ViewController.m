@@ -99,8 +99,11 @@
 - (void) webViewDidFinishLoad:(UIWebView *)webView
 {
     //Execute javascript method or pure javascript if needed
-    NSString *html = [_MDView stringByEvaluatingJavaScriptFromString:@"getContentsOfText()"];
-    NSLog(@"Content: \"%@\"", html);
+//    NSString *html = [_MDView stringByEvaluatingJavaScriptFromString:@"getContentsOfText()"];
+//    NSLog(@"Content: \"%@\"", html);
+//    
+//    [_MDView stringByEvaluatingJavaScriptFromString:@"document.getElementById('header').click()"];
+//    NSLog(@"Selector: \"%@\"", html);
 
 }
 
