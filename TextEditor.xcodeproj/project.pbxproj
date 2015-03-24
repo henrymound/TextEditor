@@ -23,6 +23,7 @@
 		80774E4F1AB8F99B00636E4B /* TextEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80774E4E1AB8F99B00636E4B /* TextEditorTests.m */; };
 		80774E5C1AB8FE5F00636E4B /* Jaapokki-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80774E5A1AB8FE5F00636E4B /* Jaapokki-Regular.otf */; };
 		80774E5D1AB8FE5F00636E4B /* MANIFESTO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80774E5B1AB8FE5F00636E4B /* MANIFESTO.ttf */; };
+		ECA684A21AC213E50028E276 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA684A11AC213E50028E276 /* Settings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		80774E5A1AB8FE5F00636E4B /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jaapokki-Regular.otf"; sourceTree = "<group>"; };
 		80774E5B1AB8FE5F00636E4B /* MANIFESTO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MANIFESTO.ttf; sourceTree = "<group>"; };
 		80C1D2F21ABA255D00F61B53 /* timeburner_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburner_regular.ttf; sourceTree = "<group>"; };
+		ECA684A01AC213E50028E276 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		ECA684A11AC213E50028E276 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				80774E371AB8F99B00636E4B /* AppDelegate.m */,
 				80774E391AB8F99B00636E4B /* ViewController.h */,
 				80774E3A1AB8F99B00636E4B /* ViewController.m */,
+				ECA684A01AC213E50028E276 /* Settings.h */,
+				ECA684A11AC213E50028E276 /* Settings.m */,
 				80774E3C1AB8F99B00636E4B /* Main.storyboard */,
 				80774E3F1AB8F99B00636E4B /* Images.xcassets */,
 				80774E411AB8F99B00636E4B /* LaunchScreen.xib */,
@@ -283,6 +288,7 @@
 			files = (
 				80774E3B1AB8F99B00636E4B /* ViewController.m in Sources */,
 				80774E381AB8F99B00636E4B /* AppDelegate.m in Sources */,
+				ECA684A21AC213E50028E276 /* Settings.m in Sources */,
 				80774E351AB8F99B00636E4B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

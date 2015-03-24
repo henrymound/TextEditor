@@ -32,6 +32,8 @@
     _TitleBar.items = @[barTitleItem];
     _TitleBar.tintColor=[UIColor blueColor];
     
+    
+    //Buttons
     _NewNote =[UIButton buttonWithType:UIButtonTypeSystem];
     [_NewNote setTitle:@"+" forState:UIControlStateNormal];
     [_NewNote sizeToFit];
@@ -53,6 +55,7 @@
     [_TextOptionsView addSubview: _Header1];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)NewNoteButton:(UIButton *)sender{
     
@@ -103,20 +106,16 @@
 //    NSLog(@"Content: \"%@\"", html);
 //    
 //    [_MDView stringByEvaluatingJavaScriptFromString:@"document.getElementById('header').click()"];
-//    NSLog(@"Selector: \"%@\"", html);
+    //    NSLog(@"Selector: \"%@\"", html);
     
+    [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];    
     [_MDView stringByEvaluatingJavaScriptFromString:@"$('#text').focus();"];
 
 }
 
 - (void)Header1Button:(UIButton *)sender{
 
-    NSString *contentsToAdd = @"some string";
-    NSRange cursorPosition = [_TextView selectedRange];
-    NSMutableString *tfContent = [[NSMutableString alloc] initWithString:[_TextView text]];
-    [tfContent insertString:contentsToAdd atIndex:cursorPosition.location];
-    NSLog(@"%lu", (unsigned long)cursorPosition.location);
-    [_TextView setText:tfContent];
+    
 
 }
 

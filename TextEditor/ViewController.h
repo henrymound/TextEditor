@@ -14,13 +14,15 @@
     IBOutlet UIButton *NewNote;
     IBOutlet UINavigationBar *TitleBar;
     IBOutlet UIView *TextOptionsView;
-        
+    IBOutlet UIButton *ThemeSelector;
 
 }
+extern NSInteger ThemeNumber;
 
 @property (strong, nonatomic) IBOutlet UIView *TextOptionsView;
 @property (strong, nonatomic) IBOutlet UITextView *TextView;
 @property (strong, nonatomic) IBOutlet UIButton *NewNote;
+@property (strong, nonatomic) IBOutlet UIButton *ThemeButton;
 @property (strong, nonatomic) IBOutlet UINavigationBar *TitleBar;
 @property (strong, nonatomic) IBOutlet UIWebView *MDView;
 
@@ -30,6 +32,7 @@
 
 //Text Options Banner
 @property (strong, nonatomic) IBOutlet UIButton *Header1;
+@property (strong, nonatomic) IBOutlet UIPickerView *ThemeSelector;
 
 
 @end

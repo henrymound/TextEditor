@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
  <head>
-     <link rel="stylesheet" type="text/css" href="paper.css">
+     <link id="pagestyle" rel="stylesheet" type="text/css" href="paper.css">
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <script>
         //Functions that can be accessed in app
         $(document).ready(
             function(){
+                
             }
         );
                       
@@ -22,6 +23,10 @@
             
             selection.removeAllRanges();
             selection.addRange(range);
+        }
+    
+        function swapStyleSheet(sheet) {
+            document.getElementById("pagestyle").setAttribute("href", sheet);
         }
 
     </script>
@@ -50,3 +55,4 @@
   
 
 </html>
+
