@@ -7,6 +7,7 @@
 //
 
 #import "Settings.h"
+#import "ViewController.h"
 
 @interface UIViewController ()
 {
@@ -16,14 +17,15 @@
 
 @implementation Settings
 @synthesize pickerData = _pickerData;
+extern int ThemeNumber;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     // Initialize Data
-    _pickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
-    ThemeNumber = 1;
+    _pickerData = @[@"Cerulean", @"Paper", @"Superhero", @"Readable", @"Darkly", @"Cyborg"];
+
     
     // Connect data
     self.picker.dataSource = self;
@@ -40,6 +42,28 @@
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return (int)1;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSString *YourselectedTitle = [self.pickerData objectAtIndex:[self.picker selectedRowInComponent:0]];
+    NSLog(@"%@", YourselectedTitle);
+    
+    if ([YourselectedTitle isEqualToString: @"Cerulean"])
+        ThemeNumber = 1;
+    else if ([YourselectedTitle isEqualToString: @"Paper"])
+        ThemeNumber = 2;
+    else if ([YourselectedTitle isEqualToString: @"Superhero"])
+        ThemeNumber = 3;
+    else if ([YourselectedTitle isEqualToString: @"Readable"])
+        ThemeNumber = 4;
+    else if ([YourselectedTitle isEqualToString: @"Darkly"])
+        ThemeNumber = 5;
+    else if ([YourselectedTitle isEqualToString: @"Cyborg"])
+        ThemeNumber = 6;
+    
+    NSLog(@"%i", ThemeNumber);
+    
+    
 }
 
 // The number of rows of data

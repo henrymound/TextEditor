@@ -22,7 +22,7 @@
 
 @implementation ViewController
 @synthesize TextView = _TextView, NewNote = _NewNote, BACKGROUND_COLOR = backgroundColor, TEXT_COLOR = textColor, TitleBar = _TitleBar, TextOptionsView = _TextOptionsView, Header1 = _Header1, MDView = _MDView;
-
+extern int ThemeNumber;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,6 +55,8 @@
     [_TextOptionsView addSubview: _Header1];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 
 - (void)NewNoteButton:(UIButton *)sender{
@@ -107,7 +109,28 @@
 //    
 //    [_MDView stringByEvaluatingJavaScriptFromString:@"document.getElementById('header').click()"];
     //    NSLog(@"Selector: \"%@\"", html);
-    
+    switch (ThemeNumber) {
+        case 1:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"cerulean.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        case 2:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"paper.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        case 3:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"superhero.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        case 4:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"readable.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        case 5:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        case 6:
+            [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"cyborg.css\");"];[_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];
+            break;
+        default:
+            break;
+    }
     [_MDView stringByEvaluatingJavaScriptFromString:@"swapStyleSheet(\"darkly.css\");"];    
     [_MDView stringByEvaluatingJavaScriptFromString:@"$('#text').focus();"];
 

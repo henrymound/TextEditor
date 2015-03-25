@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+int ThemeNumber;
+
 @interface ViewController : UIViewController <UIWebViewDelegate>{
 
     IBOutlet UITextView *TextView;
@@ -17,7 +19,6 @@
     IBOutlet UIButton *ThemeSelector;
 
 }
-extern NSInteger ThemeNumber;
 
 @property (strong, nonatomic) IBOutlet UIView *TextOptionsView;
 @property (strong, nonatomic) IBOutlet UITextView *TextView;
